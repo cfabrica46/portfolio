@@ -1,0 +1,55 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url(../resources/banner1.jpg);
+    // background-color: #5d7571;
+    background-position: left center;
+    overflow: hidden;
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        // border: 1px solid #333;
+        padding: 50px;
+        height: 400px;
+        // background-color: green;
+        font-family: "Quicksand", sans-serif;
+        .header__greeting {
+            color: white;
+            margin: 0;
+            font-weight: 300;
+            font-size: 40px;
+        }
+        .header__presentation {
+            color: white;
+            margin: 0;
+            font-weight: 300;
+            font-size: 50px;
+
+            .header__name {
+                color: #ef3724;
+            }
+        }
+
+        .header__description-box {
+            box-sizing: border-box;
+            border-radius: 40px;
+            background-color: rgba(239, 56, 36, 0.15);
+            padding: 16px 24px;
+
+            .header__description {
+                color: #ef3724;
+                margin: 0;
+                text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}
