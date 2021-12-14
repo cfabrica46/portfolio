@@ -25,6 +25,9 @@
             font-weight: 300;
             font-size: 30px;
             margin-bottom: 5px;
+            @media screen and (min-width: $small) {
+                font-size: 40px;
+            }
         }
         .header__presentation {
             color: $whiteColor;
@@ -34,17 +37,38 @@
             text-align: center;
 
             .header__name {
-                font-size: 50px;
+                position: relative;
+                top: 0;
                 color: $lightColor;
+                transition: all 0.2s;
+                &:hover {
+                    color: #86c9ab;
+                    top: -5px;
+                }
+            }
+
+            @media screen and (min-width: $small) {
+                font-size: 70px;
             }
         }
 
         .header__description-box {
+            position: relative;
+            top: 0;
             box-sizing: border-box;
             border-radius: 40px;
             background-color: $spectreColor;
             padding: 16px 24px;
             margin-top: 10px;
+            transition: all 0.2s;
+            &:hover {
+                top: 5px;
+                background-color: $lightColor;
+
+                .header__description {
+                    color: $whiteColor;
+                }
+            }
 
             .header__description {
                 color: $lightColor;
@@ -52,7 +76,14 @@
                 text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
                 font-size: 18px;
                 text-align: center;
+
+                @media screen and (min-width: $small) {
+                    font-size: 22px;
+                }
             }
         }
+    }
+    @media screen and (min-width: $small) {
+        height: 580px;
     }
 }
