@@ -52,34 +52,44 @@
             }
         }
 
-        .header__description-box {
+        .header__description {
+            box-sizing: border-box;
+            transition: all 0.2s;
+            color: $lightColor;
+            margin: 0;
+            text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
+            font-size: 18px;
+            text-align: center;
+
+            @media screen and (min-width: $small) {
+                font-size: 22px;
+            }
+        }
+
+        .header__cv {
             position: relative;
             top: 0;
             box-sizing: border-box;
             border-radius: 40px;
             background-color: $spectreColor;
             padding: 16px 24px;
-            margin-top: 10px;
             transition: all 0.2s;
+            color: $lightColor;
+            margin: 0;
+            margin-top: 30px;
+            text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+
             &:hover {
                 top: 5px;
                 background-color: $lightColor;
-
-                .header__description {
-                    color: $whiteColor;
-                }
+                color: $whiteColor;
             }
 
-            .header__description {
-                color: $lightColor;
-                margin: 0;
-                text-shadow: 0 2px 4px rgb(23 25 37 / 40%);
-                font-size: 18px;
-                text-align: center;
-
-                @media screen and (min-width: $small) {
-                    font-size: 22px;
-                }
+            @media screen and (min-width: $small) {
+                font-size: 22px;
             }
         }
     }
